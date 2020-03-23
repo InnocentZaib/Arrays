@@ -41,6 +41,14 @@ class CustomArray {
         }
         return -1;
     }
+    contains(item) {
+        for (let i = 0; i < this.items.length; i++) {
+            if (item === this.items[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
     print() {
         for (let i = 0; i < this.count; i++) {
             console.log(this.items[i]);

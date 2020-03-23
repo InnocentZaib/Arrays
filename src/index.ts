@@ -9,6 +9,6 @@ name.insert(90);
 name.insert(50);
 name.insert(100);
 name.insert(90);
-
+console.log(name.contains(200));
 console.log(name.lastIndexOf(90));
 name.print();

@@ -51,6 +51,15 @@ export class CustomArray {
     return -1;
   }
 
+  public contains(item: number) {
+    for (let i = 0; i < this.items.length; i++) {
+      if (item === this.items[i]) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   public print() {
     for (let i = 0; i < this.count; i++) {
       console.log(this.items[i]);
